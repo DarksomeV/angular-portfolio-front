@@ -1,8 +1,9 @@
 <div class="page page_wrap">
-  <div class="container">
+  <div class="container" [@routeAnimations]="prepareRoute(outlet)">
     <app-header></app-header>
     <app-profile-card></app-profile-card>
-    <router-outlet></router-outlet>
+    <router-outlet #outlet="outlet"></router-outlet>
   </div>
   <!-- /.container -->
 </div>
+

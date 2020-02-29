@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-resume-page',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume-page.component.scss']
 })
 export class ResumePageComponent implements OnInit {
-
+  @HostBinding('class') class = 'card-inner';
   constructor() { }
 
   ngOnInit() {

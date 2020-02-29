@@ -8,6 +8,7 @@ import { ProfileCardComponent } from './components/profile-card/profile-card.com
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 import { WorksPageComponent } from './pages/works-page/works-page.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { WorksPageComponent } from './pages/works-page/works-page.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
