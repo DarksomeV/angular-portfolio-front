@@ -1,4 +1,3 @@
-<div class="card-inner animated" id="card-resume">
   <div class="card-wrap">
     <div class="card-content resume">
       <div class="title">
@@ -8,26 +7,20 @@
         <span>Expierence</span>
       </div>
       <div class="row expierence">
-        <div class="col-12 expierence-item">
+        <div class="col-12 expierence-item" *ngFor="let activity of expierence">
           <div class="expierence-item__title">
-            <span class="text-uppercase">Web Developer</span>-<span>06.2018/Present</span>
+            <span class="text-uppercase">{{activity.name}}</span> - <span>{{activity.dates.start.month}} {{activity.dates.start.year}} /
+            <ng-container *ngIf="activity.dates.end.now; else inPast" >
+              Present
+            </ng-container>
+            <ng-template #inPast>{{activity.dates.end.month}} {{activity.dates.end.year}}</ng-template>
+          </span>
           </div>
           <div class="expierence-item__institution">
-            <span>Company name</span>
+            <span>{{activity.company}}</span>
           </div>
           <div class="expierence-item__description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea earum, eveniet quae quaerat sapiente voluptatum.</p>
-          </div>
-        </div>
-        <div class="col-12 expierence-item">
-          <div class="expierence-item__title">
-            <span class="text-uppercase">Web Developer</span>-<span>06.2018/Present</span>
-          </div>
-          <div class="expierence-item__institution">
-            <span>Company name</span>
-          </div>
-          <div class="expierence-item__description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea earum, eveniet quae quaerat sapiente voluptatum.</p>
+            <p>{{activity.description}}</p>
           </div>
         </div>
       </div>
@@ -35,26 +28,15 @@
         <span>Education</span>
       </div>
       <div class="row education expierence">
-        <div class="col-12 expierence-item">
+        <div class="col-12 expierence-item" *ngFor="let activity of education">
           <div class="expierence-item__title">
-            <span class="text-uppercase">Field of study</span>-<span>06.2018/Present</span>
+            <span class="text-uppercase">{{activity.name}}</span> - <span>{{activity.dates.start}}/{{activity.dates.end}}</span>
           </div>
           <div class="expierence-item__institution">
-            <span>Company name</span>
+            <span>{{activity.university}}</span>
           </div>
           <div class="expierence-item__description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea earum, eveniet quae quaerat sapiente voluptatum.</p>
-          </div>
-        </div>
-        <div class="col-12 expierence-item">
-          <div class="expierence-item__title">
-            <span class="text-uppercase">Field of study</span>-<span>06.2018/Present</span>
-          </div>
-          <div class="expierence-item__institution">
-            <span>Company name</span>
-          </div>
-          <div class="expierence-item__description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea earum, eveniet quae quaerat sapiente voluptatum.</p>
+            <p>{{activity.description}}</p>
           </div>
         </div>
       </div>
@@ -63,108 +45,43 @@
       </div>
       <div class="flex-skills">
         <div class="skills">
-          <div class="skill">
+          <div class="skill" *ngFor="let skill of skills.skillsForProgress">
             <div class="skill-name">
-              <span>Front-End</span>
+              <span>{{ skill.name }}</span>
             </div>
-            <ol class="track-progress">
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-              <li class="todo">
-              </li>
-              <li class="todo">
-              </li>
-              <li class="todo">
-              </li>
-            </ol>
-          </div>
-          <div class="skill">
-            <div class="skill-name">
-              <span>Front-End</span>
+            <div class="track-progress">
+              <ngx-skill-bar percentage="{{skill.progress}}" numberOfBars="5" color="#f08808"></ngx-skill-bar>
             </div>
-            <ol class="track-progress">
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-              <li class="todo">
-              </li>
-              <li class="todo">
-              </li>
-            </ol>
-          </div>
-          <div class="skill">
-            <div class="skill-name">
-              <span>Front-End</span>
-            </div>
-            <ol class="track-progress">
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-              <li class="todo">
-              </li>
-            </ol>
-          </div>
-          <div class="skill">
-            <div class="skill-name">
-              <span>Front-End</span>
-            </div>
-            <ol class="track-progress">
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-              <li class="done">
-              </li>
-            </ol>
           </div>
         </div>
         <div class="another-skills">
           <p class="text-uppercase">Another skills:</p>
-          <p>Skill text more</p>
-          <p>Skill text more</p>
-          <p>Skill text more</p>
+          <p *ngFor="let skill of skills.anotherSkills">{{skill}}</p>
         </div>
       </div>
       <div class="subtitle">
         <span>Languages</span>
       </div>
-      <div class="row">
-        <div class="progress-circle over50 p100">
-          <span>Ukrainian native</span>
-          <div class="left-half-clipper">
-            <div class="first50-bar"></div>
-            <div class="value-bar"></div>
-          </div>
-        </div>
-        <div class="progress-circle over50 p85">
-          <span>Russian 85%</span>
-          <div class="left-half-clipper">
-            <div class="first50-bar"></div>
-            <div class="value-bar"></div>
-          </div>
-        </div>
-        <div class="progress-circle over50 p75">
-          <span>English 75%</span>
-          <div class="left-half-clipper">
-            <div class="first50-bar"></div>
-            <div class="value-bar"></div>
+      <div class="row known-languages justify-content-around">
+        <div class="progress-wrapper" *ngFor="let language of knownLanguages; let i = index;">
+          <div class="current">{{ language.current }}/100</div>
+        <round-progress
+          [current]="language.current"
+          [max]="100"
+          [color]="'#f08808'"
+          [background]="'#31313a'"
+          [responsive]="true"
+          [semicircle]="true"
+          [rounded]="true"
+          [duration]="(i+2) * 2000"
+          [animation]="'easeInOutQuart'"
+          [animationDelay]="0"
+        ></round-progress>
+          <div class="lang-title">
+            <span>{{language.name}}</span>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+

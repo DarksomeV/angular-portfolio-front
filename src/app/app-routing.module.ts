@@ -7,9 +7,9 @@ import { WorksPageComponent } from "./pages/works-page/works-page.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomePageComponent},
-  {path: 'resume', component: ResumePageComponent},
-  {path: 'works', component: WorksPageComponent},
+  {path: 'home', component: HomePageComponent, data: { animation: 'Home' }},
+  {path: 'resume', component: ResumePageComponent, data: { animation: 'Resume' }},
+  {path: 'works', component: WorksPageComponent, data: { animation: 'Works' }},
   {path: '**',redirectTo: 'home', pathMatch: 'full'}
 ];
 

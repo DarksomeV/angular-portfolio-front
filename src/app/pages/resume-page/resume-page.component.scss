@@ -1,0 +1,37 @@
+.known-languages {
+  padding: 2rem 0;
+}
+
+.progress-wrapper {
+  position: relative;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .current {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .lang-title {
+    margin-top: 0.5rem;
+  }
+}
+
+:host {
+  ::ng-deep {
+    .statistics-container {
+      display: flex;
+
+      statistics-bar {
+        flex: 1;
+
+        .bar {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
