@@ -9,6 +9,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 import { WorksPageComponent } from './pages/works-page/works-page.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { RoundProgressModule } from "angular-svg-round-progressbar";
+import { NgxSkillBarModule } from "ngx-skill-bar";
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    RoundProgressModule,
+    NgxSkillBarModule,
     AppRoutingModule
   ],
   providers: [],

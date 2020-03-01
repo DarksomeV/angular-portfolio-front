@@ -117,36 +117,48 @@
     &__institution{
       margin: 1rem 0;
     }
+    &__description {
+      font-size: 0.8rem;
+    }
   }
 }
 
 .flex-skills{
   display: flex;
+  margin-top: 2rem;
   .skills{
     flex: 5;
   }
   .another-skills{
     flex: 2;
     p{
-      height: 55px;
       display: flex;
-      align-items: flex-end;
       margin-bottom: 0;
       color: $lightFont;
+      & + p {
+        margin-top: 1rem;
+      }
     }
   }
 }
 
 .skill{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   &-name{
-    width: 75px;
+    width: 100px;
     margin-top: 4px;
     color: $lightFont;
   }
   .track-progress{
     padding-left: 2rem;
-    width: calc(100% - 75px);
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 100px);
+  }
+  & + .skill {
+    margin-top: 1rem;
   }
 }
