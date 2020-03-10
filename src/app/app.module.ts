@@ -11,6 +11,7 @@ import { WorksPageComponent } from './pages/works-page/works-page.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { RoundProgressModule } from "angular-svg-round-progressbar";
 import { NgxSkillBarModule } from "ngx-skill-bar";
+import { NgSlimScrollModule, SLIMSCROLL_DEFAULTS } from 'ngx-slimscroll';
 
 @NgModule({
   declarations: [
@@ -26,9 +27,21 @@ import { NgxSkillBarModule } from "ngx-skill-bar";
     BrowserAnimationsModule,
     RoundProgressModule,
     NgxSkillBarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgSlimScrollModule
   ],
-  providers: [],
+  providers: [{
+    provide: SLIMSCROLL_DEFAULTS,
+    useValue: {
+      barWidth: '5',
+      gridWidth:  '2',
+      gridOpacity: '0',
+      barBackground: '#f08808',
+      barOpacity: '0.7',
+      alwaysVisible : false
+    }
+  },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
