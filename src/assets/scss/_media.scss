@@ -37,6 +37,10 @@
     opacity: 1;
     visibility: visible;
     border-radius: 4px;
+    .card-wrap {
+      padding: 2rem 2rem 0 2rem;
+    }
+
   }
 }
 
@@ -64,6 +68,17 @@
     float: none;
     width: auto;
     height: auto;
+
+    .profile{
+      .lnks {
+        position: relative;
+        margin-top: 1rem;
+      }
+    }
+
+    .profile-content {
+      padding: 1rem;
+    }
   }
 }
 
