@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { RoundProgressModule } from "angular-svg-round-progressbar";
 import { NgxSkillBarModule } from "ngx-skill-bar";
 import { NgSlimScrollModule, SLIMSCROLL_DEFAULTS } from 'ngx-slimscroll';
+import { MobileHomePageComponent } from './pages/mobile-home-page/mobile-home-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgSlimScrollModule, SLIMSCROLL_DEFAULTS } from 'ngx-slimscroll';
     ProfileCardComponent,
     HomePageComponent,
     ResumePageComponent,
-    WorksPageComponent
+    WorksPageComponent,
+    MobileHomePageComponent
   ],
   imports: [
     BrowserModule,

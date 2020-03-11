@@ -1,4 +1,4 @@
-import {Component, HostBinding, OnInit} from '@angular/core';
+import {Component, HostBinding, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-works-page',
@@ -7,6 +7,7 @@ import {Component, HostBinding, OnInit} from '@angular/core';
 })
 export class WorksPageComponent implements OnInit {
   @HostBinding('class') class = 'card-inner';
+  @Input() noScroll = false;
   constructor() { }
 
   ngOnInit() {

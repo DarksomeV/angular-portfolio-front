@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import {Component, HostBinding, Input, OnInit} from '@angular/core';
 import {education, expierence, languagesForResume, skills} from "../../data";
 import {EducationItem} from "../../data-interfaces";
 
@@ -9,6 +9,7 @@ import {EducationItem} from "../../data-interfaces";
 })
 export class ResumePageComponent implements OnInit {
   @HostBinding('class') class = 'card-inner';
+  @Input() noScroll = false;
   knownLanguages = [];
   skills;
   education: EducationItem[] = [];
