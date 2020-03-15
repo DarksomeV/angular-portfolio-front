@@ -8,11 +8,13 @@ import { ProfileCardComponent } from './components/profile-card/profile-card.com
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 import { WorksPageComponent } from './pages/works-page/works-page.component';
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { RoundProgressModule } from "angular-svg-round-progressbar";
-import { NgxSkillBarModule } from "ngx-skill-bar";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RoundProgressModule } from 'angular-svg-round-progressbar';
+import { NgxSkillBarModule } from 'ngx-skill-bar';
 import { NgSlimScrollModule, SLIMSCROLL_DEFAULTS } from 'ngx-slimscroll';
 import { MobileHomePageComponent } from './pages/mobile-home-page/mobile-home-page.component';
+import { FileSaverModule } from 'ngx-filesaver';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { MobileHomePageComponent } from './pages/mobile-home-page/mobile-home-pa
     RoundProgressModule,
     NgxSkillBarModule,
     AppRoutingModule,
-    NgSlimScrollModule
+    NgSlimScrollModule,
+    FileSaverModule,
+    HttpClientModule
   ],
   providers: [{
     provide: SLIMSCROLL_DEFAULTS,
@@ -41,8 +45,8 @@ import { MobileHomePageComponent } from './pages/mobile-home-page/mobile-home-pa
       barBackground: '#f08808',
       barOpacity: '0.7',
       alwaysVisible : false
-    }
-  },
+    },
+  }, HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
