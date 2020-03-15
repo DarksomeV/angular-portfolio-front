@@ -23,6 +23,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "angular-svg-round-progressbar": "^3.0.1",
     "express": "^4.17.1",
+    "file-saver": "^2.0.2",
+    "ngx-filesaver": "^8.1.0",
     "ngx-skill-bar": "^1.0.3",
     "ngx-slimscroll": "^8.1.0",
     "path": "^0.12.7",
