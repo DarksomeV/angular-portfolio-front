@@ -15,6 +15,7 @@ import { NgSlimScrollModule, SLIMSCROLL_DEFAULTS } from 'ngx-slimscroll';
 import { MobileHomePageComponent } from './pages/mobile-home-page/mobile-home-page.component';
 import { FileSaverModule } from 'ngx-filesaver';
 import {HttpClientModule} from '@angular/common/http';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     NgSlimScrollModule,
     FileSaverModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [{
     provide: SLIMSCROLL_DEFAULTS,
