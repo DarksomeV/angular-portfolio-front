@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/portfolio",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,6 +62,22 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "ru": {
+              "aot": true,
+              "outputPath": "dist/",
+              "i18nFile": "locale/messages.ru.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "hi",
+              "i18nMissingTranslation": "error"
+            },
+            "en": {
+              "aot": true,
+              "outputPath": "dist/",
+              "i18nFile": "locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "hi",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -73,6 +89,12 @@
           "configurations": {
             "production": {
               "browserTarget": "portfolio:build:production"
+            },
+            "ru":{
+              "browserTarget": "portfolio:build:ru"
+            },
+            "en":{
+              "browserTarget": "portfolio:build:en"
             }
           }
         },
