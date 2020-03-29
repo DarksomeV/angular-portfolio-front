@@ -18,6 +18,6 @@ app.listen(port);
 app.get('/*', (req, res) => {
   const matches = req.url.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
   const locale = matches && supportedLocales.indexOf(matches[1]) !== -1 ? matches[1] : req.locale;
-  res.sendFile(path.join(`${__dirname}/../dist/${locale}/index.html`));
+  res.sendFile(path.join(`${__dirname}/../dist/index.html`));
 });
 console.log(`Server listening on ${port}`);
