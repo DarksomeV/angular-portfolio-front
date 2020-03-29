@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,7 +65,7 @@
             },
             "ru": {
               "aot": true,
-              "outputPath": "dist/",
+              "outputPath": "dist/portfolio",
               "i18nFile": "locale/messages.ru.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "hi",
@@ -73,7 +73,7 @@
             },
             "en": {
               "aot": true,
-              "outputPath": "dist/",
+              "outputPath": "dist/portfolio",
               "i18nFile": "locale/messages.en.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "hi",
