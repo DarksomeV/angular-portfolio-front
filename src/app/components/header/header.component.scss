@@ -1,0 +1,31 @@
+.menu-btn-wrap {
+  position: relative;
+
+  &:hover {
+    .another-lang {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .another-lang {
+    width: 75px;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 100%;
+    transition: 0.3s linear all;
+
+    &:hover {
+      .menu-btn {
+        background: #f08808;
+      }
+    }
+
+    .menu-btn {
+      border-radius: 0;
+      transition: 0.3s linear all;
+    }
+  }
+}
