@@ -1,3 +1,5 @@
+export const availableLanguages = ['en-US', 'ru'];
+
 export const languagesForResume = [
   {
     name: 'Ukrainian',
@@ -9,6 +11,21 @@ export const languagesForResume = [
   },
   {
     name: 'English',
+    current: 70
+  }
+];
+
+export const languagesForResumeRu = [
+  {
+    name: 'Украинский',
+    current: 100
+  },
+  {
+    name: 'Русский',
+    current: 100
+  },
+  {
+    name: 'Английский',
     current: 70
   }
 ];
@@ -74,6 +91,45 @@ export const education = [
   }
 ];
 
+export const educationRu = [
+  {
+    name: 'Магистр',
+    university: 'Национальный технический университет Украины "Киевский политехнический институт имени Игоря Сикорского"',
+    dates: {
+      start: 2018,
+      end: 2020
+    },
+    description: 'Electrical Energetics, Electrical Engineering and Electromechanics'
+  },
+  {
+    name: 'Бакалавр',
+    university: 'Национальный технический университет Украины "Киевский политехнический институт имени Игоря Сикорского"',
+    dates: {
+      start: 2014,
+      end: 2018
+    },
+    description: 'Electrical Energetics, Electrical Engineering and Electromechanics'
+  },
+  {
+    name: 'Front-End + Angular',
+    university: 'EASY CODE IT SCHOOL',
+    dates: {
+      start: 2018,
+      end: 2018
+    },
+    description: 'Frontend-development specialized school'
+  },
+  {
+    name: 'Angular',
+    university: 'EASY CODE IT SCHOOL',
+    dates: {
+      start: 2019,
+      end: 2019
+    },
+    description: 'Frontend-development specialized school'
+  }
+];
+
 export const expierence = [
   {
     name: 'HTML markup coder/developer',
@@ -99,6 +155,44 @@ export const expierence = [
     dates: {
       start: {
         month: 'October',
+        year: '2019'
+      },
+      end: {
+        month: '',
+        year: 2020,
+        now: true
+      }
+    },
+    description: 'Angular Applications Development'
+  },
+]
+
+
+export const expierenceRu = [
+  {
+    name: 'HTML markup coder/developer',
+    company: 'Global Solutions for your bussiness GS4B',
+    dates: {
+      start: {
+        month: 'Сентябрь',
+        year: '2018'
+      },
+      end: {
+        month: 'Октябрь',
+        year: 2019,
+        now: false
+      }
+    },
+    description: '- HTML , CSS , basic PHP , basic JS and jquery\n' +
+      '- Integration with CMS Wordpress , Yii2.\n' +
+      'Starting point in IT ^)'
+  },
+  {
+    name: 'Angular 2+ developer',
+    company: 'ITeam Ukraine',
+    dates: {
+      start: {
+        month: 'Октябрь',
         year: '2019'
       },
       end: {

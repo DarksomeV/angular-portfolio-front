@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="About-header" datatype="html">
+        <source>About</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Resume" datatype="html">
+        <source>Resume</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/resume-page/resume-page.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Works" datatype="html">
+        <source>Works</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/works-page/works-page.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Viktor" datatype="html">
+        <source>Viktor Khizhnyak</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile-card/profile-card.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Download" datatype="html">
+        <source>Download CV <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile-card/profile-card.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Contact" datatype="html">
+        <source>Contact Me <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/profile-card/profile-card.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="About" datatype="html">
+        <source>About me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Hello" datatype="html">
+        <source>Hello! I’m Viktor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="first-sentance" datatype="html">
+        <source>I&apos;m Web-Developer specialized in Frontend (<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>) for complex scalable web applications.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="second-sentance" datatype="html">
+        <source>I always study new technologies to help my customers. Also I am a detail-oriented person. Feel free to contact me and we&apos;ll find out together how to make your products awesome!)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Date" datatype="html">
+        <source>Date Of Birth: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="April" datatype="html">
+        <source>1 April 1997</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Adress" datatype="html">
+        <source>Adress: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Kyiv" datatype="html">
+        <source>Kyiv. Ukraine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Services" datatype="html">
+        <source>My Services</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Modern" datatype="html">
+        <source>Modern and mobile-ready web-application/website development from scratch.
+            </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Completion" datatype="html">
+        <source>Completion of finished web-applications/websites
+            </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hobbies-interest" datatype="html">
+        <source>Hobbies &amp; interest</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Movie" datatype="html">
+        <source>Movie</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Travel" datatype="html">
+        <source>Travel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Music" datatype="html">
+        <source>Music</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home-page/home-page.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Expierence" datatype="html">
+        <source>Expierence</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/resume-page/resume-page.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Present" datatype="html">
+        <source>Present</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/resume-page/resume-page.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Education" datatype="html">
+        <source>Education</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/resume-page/resume-page.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Skills" datatype="html">
+        <source>Skills</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/resume-page/resume-page.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Another-skills:" datatype="html">
+        <source>Another skills:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/resume-page/resume-page.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Languages" datatype="html">
+        <source>Languages</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/resume-page/resume-page.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer-tip" datatype="html">
+        <source>*Current numbers are defined from my own feelings, because it is impossible to determine the exact percent of skills:)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/resume-page/resume-page.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="in-pr" datatype="html">
+        <source>In progress....</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/works-page/works-page.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
