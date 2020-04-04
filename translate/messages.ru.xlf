@@ -150,6 +150,10 @@
         <source>Резюме</source>
         <target>Резюме</target>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/resume-page/resume-page.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
@@ -214,6 +218,10 @@
         <source>Работы</source>
         <target>Работы</target>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/works-page/works-page.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
@@ -224,6 +232,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/works-page/works-page.component.html</context>
           <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="About-header" datatype="html">
+        <source>Профиль</source>
+        <target>Профиль</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
     </body>
