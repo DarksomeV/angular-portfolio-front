@@ -1,19 +1,19 @@
   <div class="card-wrap" slimScroll [enabled]="!noScroll">
     <div class="card-content resume">
       <div class="title">
-        <span>Resume</span>
+        <span i18n="@@Resume">Resume</span>
       </div>
       <div class="subtitle">
-        <span>Expierence</span>
+        <span i18n="@@Expierence">Expierence</span>
       </div>
       <div class="row expierence">
         <div class="col-12 expierence-item" *ngFor="let activity of expierence">
           <div class="expierence-item__title">
             <span class="text-uppercase">{{activity.name}}</span> - <span>{{activity.dates.start.month}} {{activity.dates.start.year}} /
             <ng-container *ngIf="activity.dates.end.now; else inPast" >
-              Present
+              <span i18n="@@Present">Present</span>
             </ng-container>
-            <ng-template #inPast>{{activity.dates.end.month}} {{activity.dates.end.year}}</ng-template>
+            <ng-template #inPast><span>{{activity.dates.end.month}} {{activity.dates.end.year}}</span></ng-template>
           </span>
           </div>
           <div class="expierence-item__institution">
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="subtitle">
-        <span>Education</span>
+        <span i18n="@@Education">Education</span>
       </div>
       <div class="row education expierence">
         <div class="col-12 expierence-item" *ngFor="let activity of education">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="subtitle">
-        <span>Skills</span>
+        <span i18n="@@Skills">Skills</span>
       </div>
       <div class="flex-skills">
         <div class="skills">
@@ -55,12 +55,12 @@
           </div>
         </div>
         <div class="another-skills">
-          <p class="text-uppercase">Another skills:</p>
+          <p class="text-uppercase" i18n="@@Another-skills:">Another skills:</p>
           <p *ngFor="let skill of skills.anotherSkills">{{skill}}</p>
         </div>
       </div>
       <div class="subtitle">
-        <span>Languages</span>
+        <span i18n="@@Languages">Languages</span>
       </div>
       <div class="row known-languages justify-content-around">
         <div class="progress-wrapper" *ngFor="let language of knownLanguages; let i = index;">
@@ -81,7 +81,7 @@
             <span>{{language.name}}</span>
           </div>
         </div>
-        <p class="footer-tip">*Current numbers are defined from my own feelings, because it is impossible to determine the exact percent of skills:)</p>
+        <p class="footer-tip" i18n="@@footer-tip">*Current numbers are defined from my own feelings, because it is impossible to determine the exact percent of skills:)</p>
       </div>
     </div>
   </div>

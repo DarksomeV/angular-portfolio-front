@@ -12,7 +12,6 @@ import { BreakpointService } from './shared/services/breakpoint.service';
 export class AppComponent implements OnInit {
   title = 'portfolio';
   device = 'desktop';
-
   constructor(public breakpointService: BreakpointService) {}
 
   ngOnInit() {

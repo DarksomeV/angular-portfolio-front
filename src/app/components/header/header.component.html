@@ -1,8 +1,18 @@
 <header class="header">
-  <a appPopup message="Sorry, It will be available soon:) " class="menu-btn">
-    <span><i class="fas fa-globe-americas"></i></span>
-    <span>ENG</span>
-  </a>
+  <div class="menu-btn-wrap">
+    <a class="menu-btn">
+      <span><i class="fas fa-globe-americas"></i></span>
+      <span>{{setLanguages.current | uppercase}}</span>
+    </a>
+    <div class="another-lang">
+      <a class="menu-btn" *ngFor="let lang of setLanguages.languages" href="/{{lang}}/">
+        <span><i class="fas fa-globe-americas"></i></span>
+        <span>{{lang | uppercase}}</span>
+      </a>
+    </div>
+  </div>
+
+
   <div class="top-menu top-menu-onepage">
     <div class="menu-main-menu-container">
       <ul id="menu-main-menu" class="menu">
