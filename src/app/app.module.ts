@@ -14,8 +14,9 @@ import { NgxSkillBarModule } from 'ngx-skill-bar';
 import { NgSlimScrollModule, SLIMSCROLL_DEFAULTS } from 'ngx-slimscroll';
 import { MobileHomePageComponent } from './pages/mobile-home-page/mobile-home-page.component';
 import { FileSaverModule } from 'ngx-filesaver';
-import {HttpClientModule} from '@angular/common/http';
-import {SharedModule} from './shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
+import { IgxTabsModule } from 'igniteui-angular';
 
 @NgModule({
   declarations: [
@@ -36,20 +37,22 @@ import {SharedModule} from './shared/shared.module';
     NgSlimScrollModule,
     FileSaverModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    IgxTabsModule
   ],
   providers: [{
     provide: SLIMSCROLL_DEFAULTS,
     useValue: {
       barWidth: '5',
-      gridWidth:  '2',
+      gridWidth: '2',
       gridOpacity: '0',
       barBackground: '#f08808',
       barOpacity: '0.7',
-      alwaysVisible : false
+      alwaysVisible: false
     },
   }, HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
