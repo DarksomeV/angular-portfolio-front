@@ -16,7 +16,9 @@ import { MobileHomePageComponent } from './pages/mobile-home-page/mobile-home-pa
 import { FileSaverModule } from 'ngx-filesaver';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
-import { IgxTabsModule } from 'igniteui-angular';
+import { ProjectModalComponent } from './components/project-modal/project-modal.component';
+import {MatDialogModule, MatTabsModule} from '@angular/material';
+import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { IgxTabsModule } from 'igniteui-angular';
     HomePageComponent,
     ResumePageComponent,
     WorksPageComponent,
-    MobileHomePageComponent
+    MobileHomePageComponent,
+    ProjectModalComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,9 @@ import { IgxTabsModule } from 'igniteui-angular';
     FileSaverModule,
     HttpClientModule,
     SharedModule,
-    IgxTabsModule
+    MatTabsModule,
+    MatDialogModule,
+    CrystalLightboxModule
   ],
   providers: [{
     provide: SLIMSCROLL_DEFAULTS,
@@ -52,7 +57,8 @@ import { IgxTabsModule } from 'igniteui-angular';
     },
   }, HttpClientModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ ProjectModalComponent ]
 })
 export class AppModule {
 }

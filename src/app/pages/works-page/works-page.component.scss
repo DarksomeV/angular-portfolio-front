@@ -15,29 +15,21 @@
 
 :host {
   ::ng-deep {
-    .igx-tabs__header {
-      background: transparent !important;
-      box-shadow: none !important;
-
-      &-menu-item {
-        background: transparent !important;
-        color: #868786 !important;
-        &:hover {
-          color: $mainTheme !important;
-        }
-
-        &-indicator {
-          background: $mainTheme !important;
-        }
-
-        &--selected {
-          background: transparent !important;
-          color: $mainTheme !important;
-        }
-      }
+    .mat-tab-label .mat-tab-label-content {
+      color: $mainTheme !important;
     }
+
+    .mat-tab-group.mat-primary .mat-ink-bar {
+      background: $mainTheme !important;
+    }
+
+    .mat-tab-label-active{
+      opacity: 1 !important;
+    }
+
   }
 }
+
 
 .single-works {
   position: relative;
@@ -109,6 +101,7 @@
     opacity: 0;
     visibility: hidden;
     a {
+      cursor: pointer;
       font-size: 20px;
       margin-bottom: 15px;
       color: #ffffff;

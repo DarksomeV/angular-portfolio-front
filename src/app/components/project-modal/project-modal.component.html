@@ -1,0 +1,20 @@
+<div class="project-modal-wrapper">
+  <div class="title">
+    <h2>{{currentWork.title}}</h2>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6 images-container">
+      <div class="image-wrap" *ngFor="let image of currentWork.pictures">
+        <img [src]="image" lightbox />
+      </div>
+    </div>
+    <div class="col-12 col-md-6 description-wrap">
+      <p>{{currentWork.description}}</p>
+      <h3>Technologies:</h3>
+      <ul>
+        <li *ngFor="let tech of currentWork.technologies">{{tech}};</li>
+      </ul>
+      <p>{{currentWork.url ? currentWork.url : 'Under NDA'}}</p>
+    </div>
+  </div>
+</div>
