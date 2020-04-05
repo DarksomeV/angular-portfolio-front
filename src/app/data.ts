@@ -165,8 +165,7 @@ export const expierence = [
     },
     description: 'Angular Applications Development'
   },
-]
-
+];
 
 export const expierenceRu = [
   {
@@ -203,4 +202,39 @@ export const expierenceRu = [
     },
     description: 'Angular Applications Development'
   },
+];
+
+export const works = [
+  {
+    id: 1,
+    title: 'My own portfolio',
+    description: 'This place, where you are now - is made by me from nothing. Using my imagination I discussed with designer what I want to see, and according to my wishes was made psd templates. Then I made this Angular app.',
+    technologies: ['Angular 8', 'Angular Material', 'Localization with i18n', 'Firebase'],
+    pictures: ['assets/images/details/1-1.png'],
+    url: 'https://portfolio-enviti.web.app/'
+  },
+  {
+    id: 2,
+    title: 'Company portfolio',
+    description: 'Iteam company portfolio. I didnt make it from scratch, but redid most part of application.',
+    technologies: ['Angular 8', 'Angular Material'],
+    pictures: ['assets/images/details/2-1.png'],
+    url: 'http://iteam-software.co.ua/'
+  },
+  {
+    id: 3,
+    title: 'Aircraft tickets booking system',
+    description: 'The goal of the project is to allow companies to book air tickets for their employees in an affordable way with all kinds of discounts and a detailed search. My responsibilities wer: feature development, bug fixing etc',
+    technologies: ['Angular 8', 'RxJs', 'NgRx'],
+    pictures: ['assets/images/details/3-1.png'],
+    url: null
+  },
+  {
+    id: 4,
+    title: 'Graphic content selling platform',
+    description: 'A platform through which creative graphic content can receive a quality assessment instead of cryptocurrency. My responsibilities wer: feature development, bug fixing, multi-theming etc',
+    technologies: ['Angular 8', 'Angular Material', 'RxJs', 'Akita'],
+    pictures: ['assets/images/details/4-1.jpeg', 'assets/images/details/4-2.jpeg'],
+    url: null
+  }
 ]
