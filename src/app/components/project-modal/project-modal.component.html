@@ -16,6 +16,6 @@
       </ul>
       <p>{{currentWork.url ? currentWork.url : 'Under NDA'}}</p>
     </div>
-    <a [href]="currentWork.url">Show More</a>
+    <a *ngIf="googleExperiments" [href]="currentWork.url">Show More</a>
   </div>
 </div>
