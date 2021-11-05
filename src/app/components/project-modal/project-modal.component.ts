@@ -18,7 +18,7 @@ export class ProjectModalComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.googleExperiments = window['google_optimise'].get('cee6tdvIQ02_e5xRTum38g');
+    this.googleExperiments = window['google_optimize'].get('cee6tdvIQ02_e5xRTum38g');
     console.log(this.googleExperiments)
   }
 
