@@ -10,12 +10,16 @@ import {works} from '../../data';
 export class ProjectModalComponent implements OnInit, OnDestroy {
   allWorks = works;
   currentWork;
+
+  googleExperiments;
   constructor(public dialogRef: MatDialogRef<ProjectModalComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any) {
     this.currentWork = this.allWorks.find(work => work.id === data.id);
   }
 
   ngOnInit() {
+    this.googleExperiments = window['google_optimise'].get();
+    console.log(this.googleExperiments)
   }
 
   ngOnDestroy(): void {
